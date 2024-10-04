@@ -1,3 +1,3 @@
 function eventHandling() {
-    // Your code here.
+   document.getElementById("josh").addEventListener("click", function(){ alert(" GOOD DAY MATEEEEEE !"); });
 }
