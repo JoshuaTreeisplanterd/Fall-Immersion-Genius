@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <script>
+        function validateForm() {
+            const firstName = document.getElementById("Firstname").value;
+            const lastName = document.getElementById("Lastname").value;
+            const email = document.getElementById("email").value;
+
+            if (firstName === "" || lastName === "" || email === "") {
+                alert("Please fill in all fields.");
+                return false; // Prevent form submission
+            }
+
+            return true; // Allow form submission
+        }
+    </script>
+</head>
+<body>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="Firstname">First name:</label><br>
+        <input type="text" id="Firstname"><br>
+        
+        <label for="Lastname">Last name:</label><br>
+        <input type="text" id="Lastname"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+            
